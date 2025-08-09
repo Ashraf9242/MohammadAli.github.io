@@ -493,6 +493,49 @@
             border-radius: 20px;
             margin: 3rem 0;
         }
+        .resume-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    border: none;
+    background: inherit;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+    background: #f5f5f5;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.resume-dropdown:hover .dropdown-menu {
+    display: block;
+}
 
         .mobile-menu {
             display: none;
@@ -569,6 +612,7 @@
             width: 0%;
             transition: width 0.3s ease;
         }
+
     </style>
 </head>
 <body>
@@ -606,29 +650,31 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Mohammad Ashraf Ali</h1>
-                    <div class="subtitle">Software Application Developer</div>
-                    <p>🎓 IT Graduate | 💡 Software Developer | 🤖 AI & LLM Enthusiast | 📱 Smart Solutions Builder | UTAS Ibri 2025</p>
-                    <p>Passionate about creating intelligent systems that blend software, hardware, and AI to solve real-world problems, especially within the context of emerging technologies.</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i> Get In Touch
-                        </a>
-                        <a href="certificates/US resume 2025.png" class="btn btn-secondary">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
+               <div class="hero-text">
+            <h1>Mohammad Ashraf Ali</h1>
+            <div class="subtitle">Software Developer & AI Research Engineer</div>
+            <p>🎓 BSc Software Development | 💡 Cloud & Full-Stack Expert | 🤖 Machine Learning | 📱 Mobile & IoT Systems | ☁️ Azure Certified</p>
+            <p>Developing next-generation software solutions with expertise in AI/ML, cloud computing, and privacy-first architectures. Combining academic research with practical development skills.</p>
+            
+               <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="certificates/Mohammad US Resume.pdf" class="btn btn-secondary" download>
+                     <i class="fas fa-download"></i> Download Resume (PDF)
+                    </a>
                     </div>
                 </div>
-<div class="hero-image">
-    <div class="profile-card">
-        <div class="profile-pic">
+            </div>
+        <div class="hero-image">
+            <div class="profile-card">
+                <div class="profile-pic">
             <img src="Mohammad/Mohammadasrafali.png" alt="Profile Photo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" class="lightbox-trigger">
         </div>
-        <h3>Software Developer</h3>
-        <p>Frontend & Backend & Mobile application & Desktop Software</p>
-    </div>
-</div>
+            <h3>Software Developer</h3>
+            <p>Frontend & Backend & Mobile application & Desktop Software</p>
+        </div>
+        </div>
             </div>
         </div>
     </section>
@@ -638,8 +684,7 @@
             <h2 class="section-title">About Me</h2>
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
-                    I'm a 2025 graduate from the University of Technology and Applied Sciences in Ibri, majoring in Information Technology with a specialization in Software Application Development. My graduation project focused on integrating Large Language Models (LLMs) with IoT to build a local smart home assistant device using Raspberry Pi—an innovative solution that enables privacy-focused, voice-controlled home automation without relying on cloud-based services.
-                </p>
+                Software Application Development graduate (2025) from the University of Technology and Applied Sciences, Ibri. Specialized in AI-driven solutions with expertise in Large Language Models, IoT integration, and privacy-first architectures. Developed an award-winning smart home assistant leveraging LLMs and Raspberry Pi for local, cloud-independent automation. Published IEEE researcher with proven experience in enterprise IT operations and cloud computing (Azure AZ-900, AWS ML certified).                </p>
             </div>
         </div>
     </section>
@@ -731,13 +776,20 @@
     <section id="experience" class="section" style="background: var(--bg-secondary);">
         <div class="container">
             <h2 class="section-title">Experience & Education</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">SEP 2020 - PRESENT</div>
-                    <div class="timeline-title">Bachelor in Software Applications Development</div>
-                    <div class="timeline-company">University of Technology and Applied Sciences, Ibri</div>
-                    <p>GPA: 3.2/4.0 - Specialized in Software Application Development</p>
-                </div>
+            <article class="timeline-item" style="display: flex; justify-content: space-between; align-items: center;" role="listitem">
+                        <header>
+                            <div class="timeline-date">SEP 2020 - JUN 2025</div>
+                            <h3 class="timeline-title">Bachelor of Science in Information Technology</h3>
+                            <div class="timeline-company">University of Technology and Applied Sciences, Ibri</div>
+                        </header>
+                        <div>
+                            <p>GPA: 3.2/4.0 - Specialized in Software Application Development</p>
+                        </div>
+                        <figure style="max-width: 200px; margin-left: 2rem;">
+                            <img src="certificates/Graduation 2025.jpeg" alt="Graduation Statement 2025" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;" class="lightbox-trigger">
+                            <figcaption class="visually-hidden">Graduation Certificate</figcaption>
+                        </figure>
+                    </article>
                 <div class="timeline-item" style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
                         <div class="timeline-date">JUL - AUG 2024</div>
@@ -857,9 +909,34 @@
         <div class="certificate-title">Academic Excellence Awards</div>
         <div class="certificate-description">Received Academic Excellence Award in IT (May 2023), won 2nd place in Math Competition at Tech Marathon, and Best Math Poster award, demonstrating consistent academic performance and analytical thinking skills.</div>
     </div>
+   
+
+        </div>
+         <div class="certificate-card">
+    <div class="certificate-images">
+        <div class="cert-image">
+            <img src="certificates/AWS AI & ML.png" alt="AWS ML Foundations Certificate" onerror="this.parentElement.innerHTML='<i class=\'fab fa-aws fa-3x\'></i>'" data-index="3" class="lightbox-trigger">
+        </div>
+    </div>
+    <div class="certificate-content">
+        <div class="certificate-title">AWS Educate - Machine Learning Foundations (2025)</div>
+        <div class="certificate-description">Completed comprehensive machine learning foundations training through Amazon Web Services, gaining expertise in ML concepts, AWS ML services, and practical applications of artificial intelligence in cloud environments.</div>
+    </div>
 </div>
-</div>
-</div>
+
+<div class="certificate-card">
+    <div class="certificate-images">
+        <div class="cert-image">
+            <img src="certificates/AZ-900 2025.png" alt="Azure AZ-900 Certificate" onerror="this.parentElement.innerHTML='<i class=\'fab fa-microsoft fa-3x\'></i>'" data-index="4" class="lightbox-trigger">
+        </div>
+    </div>
+    <div class="certificate-content">
+        <div class="certificate-title">Microsoft Azure Fundamentals (AZ-900) - Smartovate (2025)</div>
+        <div class="certificate-description">Successfully completed Microsoft Azure Fundamentals certification training through Smartovate Subul Program, demonstrating proficiency in cloud concepts, Azure services, security, privacy, compliance, and pricing models.</div>
+    </div>
+    </div>
+            </div>
+
 </section>
 
 <!-- Lightbox Modal -->
@@ -988,6 +1065,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 </script>
             </div>
         </div>
@@ -997,7 +1075,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="container">
             <h2 style="margin-bottom: 1rem;">Download My Resume</h2>
             <p style="color: var(--text-secondary); margin-bottom: 2rem;">Get a detailed overview of my experience, skills, and achievements</p>
-            <a href="certificates/US resume 2025.pdf" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+            <a href="certificates/Mohammad US Resume.pdf" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">
                 <i class="fas fa-file-pdf"></i> Download PDF Resume
             </a>
         </div>
